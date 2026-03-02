@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delivery Info | Fresh Mart – Grocery Delivery Shankernagar</title>
+    <meta name="description"
+        content="Learn about Fresh Mart's grocery delivery service in Shankernagar, Rupandehi. Same-day delivery, Rs 150 flat charge. Order fresh vegetables online today!">
+    <meta name="keywords"
+        content="grocery delivery Shankernagar, vegetable delivery Rupandehi, mini mart near me, home delivery vegetables">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🥦 FRESH<span>MART</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="offers.html">Offers</a>
+            <a href="delivery.html" class="active">Delivery Info</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span> | Rs. <span id="cart-total">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>🛵 Delivery Information</h1>
+        <p>Fast, reliable grocery delivery in Shankernagar, Rupandehi</p>
+    </div>
+
+    <div class="container" style="margin-top:30px;">
+
+        <!-- Delivery Steps -->
+        <div class="section-header">
+            <h2>How to Order</h2>
+            <p>Order fresh vegetables in 4 simple steps</p>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num">1</div>
+                <h3>Browse Products</h3>
+                <p>Visit the <a href="products.html" style="color:var(--primary)">Products page</a> and explore our 22+
+                    fresh vegetables.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">2</div>
+                <h3>Add to Cart</h3>
+                <p>Click "Add to Cart" for each item. Your order list appears on the right side.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">3</div>
+                <h3>Fill Delivery Form</h3>
+                <p>Fill in your name, address, and preferred time slot below.</p>
+            </div>
+            <div class="step">
+                <div class="step-num">4</div>
+                <h3>Confirm on WhatsApp</h3>
+                <p>Click the WhatsApp button and send your order. We confirm within 15 minutes!</p>
+            </div>
+        </div>
+
+        <!-- Delivery Zones -->
+        <div class="section-header" style="margin-top:40px;">
+            <h2>Delivery Areas & Charges</h2>
+            <p>We currently deliver within Rupandehi district</p>
+        </div>
+        <div style="overflow-x:auto;">
+            <table class="zones-table">
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Delivery Time</th>
+                        <th>Charge</th>
+                        <th>Min. Order</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>🏠 Shankernagar (Core)</td>
+                        <td>Within 1-2 hours</td>
+                        <td><strong>Rs. 100</strong></td>
+                        <td>Rs. 200</td>
+                    </tr>
+                    <tr>
+                        <td>🏙️ Tilottama Municipality</td>
+                        <td>Same day (2-4 hrs)</td>
+                        <td><strong>Rs. 150</strong></td>
+                        <td>Rs. 300</td>
+                    </tr>
+                    <tr>
+                        <td>🌆 Butwal City</td>
+                        <td>Same/Next day</td>
+                        <td><strong>Rs. 200</strong></td>
+                        <td>Rs. 500</td>
+                    </tr>
+                    <tr>
+                        <td>🏘️ Siddharth Nagar</td>
+                        <td>Next day</td>
+                        <td><strong>Rs. 200</strong></td>
+                        <td>Rs. 500</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div
+            style="background:#e8f5e9;border-radius:12px;padding:16px 20px;margin-top:18px;display:flex;align-items:center;gap:14px;">
+            <span style="font-size:1.6rem;">ℹ️</span>
+            <p style="font-size:0.88rem;color:#2c3e50;line-height:1.5;"><strong>Delivery Hours:</strong> Monday to
+                Saturday, 7:00 AM – 7:00 PM. Sunday delivery available on request. For urgent orders, call
+                <strong>9847076207</strong>.</p>
+        </div>
+
+        <!-- Delivery Form -->
+        <div style="margin-top:40px;" class="two-col">
+            <div class="form-card">
+                <h2><i class="fas fa-truck" style="color:var(--primary)"></i> Delivery Request Form</h2>
+                <p style="font-size:0.85rem;color:#888;margin-bottom:20px;">Fill this form to pre-schedule your
+                    delivery. We will confirm via WhatsApp.</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="full-name">Full Name *</label>
+                        <input type="text" id="full-name" placeholder="Your full name">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" placeholder="98XXXXXXXX">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="address">Delivery Address *</label>
+                    <input type="text" id="address" placeholder="Street, Ward, Locality">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="area">Delivery Area *</label>
+                        <select id="area">
+                            <option value="">Select your area...</option>
+                            <option>Shankernagar (Core) – Rs. 100</option>
+                            <option>Tilottama Municipality – Rs. 150</option>
+                            <option>Butwal City – Rs. 200</option>
+                            <option>Siddharth Nagar – Rs. 200</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="timeslot">Preferred Time Slot *</label>
+                        <select id="timeslot">
+                            <option value="">Choose time...</option>
+                            <option>Morning (7AM – 10AM)</option>
+                            <option>Late Morning (10AM – 12PM)</option>
+                            <option>Afternoon (12PM – 3PM)</option>
+                            <option>Evening (3PM – 7PM)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="special-notes">Special Notes (optional)</label>
+                    <textarea id="special-notes" rows="3"
+                        placeholder="Any special instructions or items to include..."></textarea>
+                </div>
+
+                <button class="btn-whatsapp" onclick="submitDeliveryForm()">
+                    <i class="fab fa-whatsapp"></i> Send Delivery Request via WhatsApp
+                </button>
+            </div>
+
+            <!-- Delivery Map -->
+            <div>
+                <div class="form-card" style="margin-bottom:20px;">
+                    <h2><i class="fas fa-map-marker-alt" style="color:var(--primary)"></i> Our Location</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14131.78505504285!2d83.4613247!3d27.6888463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39968692797e8e51%3A0xc6f3f00109015c!2sShankarnagar%2C%20Tilottama!5e0!3m2!1sen!2snp!4v1709350000000"
+                        width="100%" height="250" style="border:0;border-radius:10px;" allowfullscreen=""
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="form-card">
+                    <h2><i class="fas fa-info-circle" style="color:var(--primary)"></i> Quick Info</h2>
+                    <div class="info-item" style="margin-bottom:14px;">
+                        <div class="info-icon"><i class="fas fa-clock"></i></div>
+                        <div>
+                            <div class="info-label">Hours</div>
+                            <div class="info-value">Mon–Sat 7AM–7PM</div>
+                        </div>
+                    </div>
+                    <div class="info-item" style="margin-bottom:14px;">
+                        <div class="info-icon"><i class="fas fa-motorcycle"></i></div>
+                        <div>
+                            <div class="info-label">Delivery</div>
+                            <div class="info-value">From Rs. 100</div>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <div class="info-label">Call Us</div>
+                            <div class="info-value">9847076207</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">🥦 FRESH<span style="color:white">MART</span></a>
+                    <p>Fresh grocery delivery & mini mart near you in Shankernagar, Rupandehi.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="delivery.html">Delivery Info</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 9847076207</p>
+                    <p>📧 freshmar22@gmail.com</p>
+                    <p>📍 Shankernagar, Rupandehi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fresh Mart Shankernagar | Grocery delivery & mini mart near you</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script>
+        function submitDeliveryForm() {
+            const name = document.getElementById('full-name').value.trim();
+            const phone = document.getElementById('phone').value.trim();
+            const address = document.getElementById('address').value.trim();
+            const area = document.getElementById('area').value;
+            const timeslot = document.getElementById('timeslot').value;
+            const notes = document.getElementById('special-notes').value.trim();
+
+            if (!name || !phone || !address || !area || !timeslot) {
+                alert('Please fill in all required fields!');
+                return;
+            }
+
+            const cart = getCart();
+            const cartSummary = cart.length > 0
+                ? cart.map(i => `${i.name} x${i.qty}`).join(', ')
+                : 'Items not specified yet';
+            const total = getCartTotal();
+
+            const msg = `*Fresh Mart Delivery Request*%0A----------------------------%0A*Name:* ${name}%0A*Phone:* ${phone}%0A*Address:* ${address}%0A*Area:* ${area}%0A*Time Slot:* ${timeslot}%0A----------------------------%0A*Items:* ${cartSummary}%0A*Cart Total:* Rs. ${total}%0A*Notes:* ${notes || 'None'}`;
+            window.open(`https://wa.me/9779847076207?text=${msg}`, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>

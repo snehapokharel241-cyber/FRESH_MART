@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Fresh Mart – Grocery Delivery Shankernagar</title>
+    <meta name="description"
+        content="Browse 22+ fresh vegetables at Fresh Mart Shankernagar. Best prices on grocery delivery near you in Rupandehi.">
+    <meta name="keywords"
+        content="grocery delivery, mini mart near me, buy vegetables online, fresh vegetables Shankernagar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🥦 FRESH<span>MART</span></a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html" class="active">Products</a>
+            <a href="offers.html">Offers</a>
+            <a href="delivery.html">Delivery Info</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span> | Rs. <span id="cart-total">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <div class="page-banner">
+        <h1>🥦 All Products</h1>
+        <p>Fresh stock updated daily – 22+ varieties of vegetables</p>
+    </div>
+
+    <div class="container" style="margin-top:30px;">
+        <div class="two-col">
+
+            <div>
+                <div class="section-header">
+                    <h2>Daily Essentials (जरुरी तरकारीहरु)</h2>
+                    <p>Add items to your cart and order via WhatsApp</p>
+                </div>
+                <div class="grid" id="products-grid">
+                </div>
+            </div>
+
+            <div class="order-panel" id="order-panel">
+                <h3>
+                    <i class="fas fa-shopping-basket" style="color:var(--primary)"></i>
+                    Your Cart
+                    <span id="panel-badge"
+                        style="display:none;background:var(--primary);color:white;border-radius:50%;width:22px;height:22px;font-size:0.75rem;font-weight:800;display:inline-flex;align-items:center;justify-content:center;margin-left:6px;">0</span>
+                </h3>
+
+                <div id="order-items">
+                    <div style="text-align:center;padding:30px 0;color:#ccc;">
+                        <div style="font-size:3rem;">🛒</div>
+                        <p style="margin-top:10px;font-size:0.9rem;">No items added yet.<br>Click <strong
+                                style="color:var(--primary)">Add to Cart</strong> to start!</p>
+                    </div>
+                </div>
+
+                <div class="order-total" id="order-total-row" style="display:none;">
+                    <span>Subtotal</span>
+                    <span>Rs. <span id="subtotal-val">0</span></span>
+                </div>
+                <div id="delivery-note"
+                    style="display:none;margin-top:6px;font-size:0.82rem;color:#aaa;background:#f9f9f9;padding:6px 10px;border-radius:6px;">
+                    🛵 + Rs. 150 delivery charge
+                </div>
+
+                <!-- PROCEED BUTTON -->
+                <button class="btn-proceed" id="checkout-btn" onclick="checkout()" style="display:none;">
+                    <i class="fab fa-whatsapp"></i>
+                    Proceed &amp; Order via WhatsApp
+                </button>
+
+                <button onclick="clearCartAndRefresh()" id="clear-btn"
+                    style="display:none;width:100%;margin-top:8px;padding:9px;border:1.5px solid #eee;border-radius:8px;background:white;color:#e74c3c;font-weight:700;cursor:pointer;font-family:inherit;font-size:0.88rem;">
+                    🗑 Clear Cart
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">🥦 FRESH<span style="color:white">MART</span></a>
+                    <p>Fresh grocery delivery & mini mart near you in Shankernagar, Rupandehi.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="delivery.html">Delivery Info</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 9847076207</p>
+                    <p><i class="fas fa-envelope"></i> freshmar22@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shankernagar, Rupandehi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fresh Mart Shankernagar | Grocery delivery near you</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+
+    <style>
+        /* Proceed / WhatsApp Order button */
+        .btn-proceed {
+            display: none;
+            width: 100%;
+            margin-top: 16px;
+            padding: 14px 20px;
+            background: linear-gradient(135deg, #25D366 0%, #1ebe5c 100%);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            font-family: inherit;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+            transition: transform 0.2s, box-shadow 0.2s;
+            animation: pulse-green 2s infinite;
+        }
+
+        .btn-proceed:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 28px rgba(37, 211, 102, 0.5);
+            animation: none;
+        }
+
+        @keyframes pulse-green {
+
+            0%,
+            100% {
+                box-shadow: 0 4px 18px rgba(37, 211, 102, 0.35);
+            }
+
+            50% {
+                box-shadow: 0 4px 28px rgba(37, 211, 102, 0.65);
+            }
+        }
+
+        /* slide-in for order panel items */
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .order-item-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 9px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 0.88rem;
+            animation: slideIn 0.25s ease;
+        }
+
+        .order-item-row:last-child {
+            border-bottom: none;
+        }
+
+        /* panel badge */
+        #panel-badge {
+            background: var(--primary);
+            color: white;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            font-size: 0.75rem;
+            font-weight: 800;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+    </style>
+
+    <script>
+        // 1. Function to update the Order Panel UI
+        function renderOrderPanel() {
+            if (typeof getCart !== 'function') return;
+
+            const cart = getCart();
+            const itemsEl = document.getElementById('order-items');
+            const totalRow = document.getElementById('order-total-row');
+            const subtotalVal = document.getElementById('subtotal-val');
+            const deliveryNote = document.getElementById('delivery-note');
+            const checkoutBtn = document.getElementById('checkout-btn');
+            const clearBtn = document.getElementById('clear-btn');
+            const badge = document.getElementById('panel-badge');
+
+            // Keep header badge in sync too
+            if (typeof updateCartUI === 'function') updateCartUI();
+
+            if (!cart || cart.length === 0) {
+                itemsEl.innerHTML = `
+                    <div style="text-align:center;padding:30px 0;color:#ccc;">
+                        <div style="font-size:3rem;">🛒</div>
+                        <p style="margin-top:10px;font-size:0.9rem;">No items added yet.<br>
+                        Click <strong style="color:var(--primary)">Add to Cart</strong> to start!</p>
+                    </div>`;
+                totalRow.style.display = 'none';
+                if (deliveryNote) deliveryNote.style.display = 'none';
+                checkoutBtn.style.display = 'none';
+                clearBtn.style.display = 'none';
+                if (badge) badge.style.display = 'none';
+            } else {
+                const totalQty = cart.reduce((s, i) => s + i.qty, 0);
+
+                itemsEl.innerHTML = cart.map(i => `
+                    <div class="order-item-row">
+                        <div>
+                            <span style="font-weight:700;">${i.name}</span>
+                            <span style="background:#e8f5e9;color:var(--primary);border-radius:4px;padding:1px 7px;font-size:0.78rem;font-weight:700;margin-left:6px;">×${i.qty}</span>
+                        </div>
+                        <div style="display:flex;align-items:center;gap:8px;">
+                            <span style="font-weight:700;">Rs.${i.price * i.qty}</span>
+                            <button onclick="handleRemove('${i.name}')"
+                                style="background:#fdecea;border:none;color:#e74c3c;cursor:pointer;font-weight:bold;font-size:1rem;border-radius:6px;width:26px;height:26px;display:flex;align-items:center;justify-content:center;">×</button>
+                        </div>
+                    </div>`).join('');
+
+                const subtotal = typeof getCartTotal === 'function' ? getCartTotal() : 0;
+                subtotalVal.innerText = subtotal;
+                totalRow.style.display = 'flex';
+                if (deliveryNote) deliveryNote.style.display = 'block';
+
+                // Grand total line
+                let grandRow = document.getElementById('grand-total-row');
+                if (!grandRow) {
+                    grandRow = document.createElement('div');
+                    grandRow.id = 'grand-total-row';
+                    grandRow.style.cssText = 'display:flex;justify-content:space-between;font-weight:900;font-size:1.05rem;margin-top:8px;padding-top:8px;border-top:2px dashed #27ae60;color:var(--primary);';
+                    deliveryNote.insertAdjacentElement('afterend', grandRow);
+                }
+                grandRow.innerHTML = `<span>Grand Total</span><span>Rs. ${subtotal + 150}</span>`;
+
+                checkoutBtn.style.display = 'flex';
+                clearBtn.style.display = 'block';
+                if (badge) { badge.style.display = 'inline-flex'; badge.innerText = totalQty; }
+            }
+        }
+
+        // 2. Helper to remove items and refresh panel
+        function handleRemove(name) {
+            if (typeof removeFromCart === 'function') {
+                removeFromCart(name);
+                renderOrderPanel();
+            }
+        }
+
+        // 3. Helper to clear cart
+        function clearCartAndRefresh() {
+            if (confirm('Clear all items from cart?')) {
+                if (typeof clearCart === 'function') {
+                    clearCart();
+                    // Remove grand total row if present
+                    const gt = document.getElementById('grand-total-row');
+                    if (gt) gt.remove();
+                    renderOrderPanel();
+                }
+            }
+        }
+
+        // 4. Initialization
+        window.addEventListener('load', () => {
+            const grid = document.getElementById('products-grid');
+            if (typeof vegData !== 'undefined') {
+                grid.innerHTML = '';
+                vegData.forEach(item => {
+                    grid.innerHTML += `
+                        <div class="card">
+                            <div class="img-container">
+                                <img src="${item.img}" alt="${item.name}" class="card-img" loading="lazy"
+                                     onerror="this.src='https://via.placeholder.com/400x300?text=${item.name}'">
+                            </div>
+                            <div class="card-body">
+                                <p class="name-en">${item.name}</p>
+                                <p class="name-np">${item.np}</p>
+                                <div class="price">Rs. ${item.price} <span class="unit">/ kg</span></div>
+                                <button class="add-btn" onclick="handleAddToCart('${item.name}', ${item.price})">
+                                    <i class="fas fa-cart-plus"></i> Add to Cart
+                                </button>
+                            </div>
+                        </div>`;
+                });
+            }
+            renderOrderPanel();
+        });
+
+        // 5. Global handler
+        function handleAddToCart(name, price) {
+            if (typeof addToCart === 'function') {
+                addToCart(name, price);
+                renderOrderPanel();
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Mart Shankernagar | Grocery Delivery & Mini Mart Near Me</title>
+    <meta name="description"
+        content="Fresh Mart Shankernagar – Your trusted mini mart near you. Order fresh vegetables online with fast grocery delivery in Rupandehi, Shankernagar. Fresh stock daily!">
+    <meta name="keywords"
+        content="grocery delivery, mini mart near me, fresh vegetables, online grocery Shankernagar, vegetable delivery Rupandehi">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="logo">🥦 FRESH<span>MART</span></a>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="offers.html">Offers</a>
+            <a href="delivery.html">Delivery Info</a>
+            <a href="contact.html">Contact</a>
+            <a href="products.html" class="cart-btn">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count">0</span> | Rs. <span id="cart-total">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Stock Ticker -->
+    <div class="stock-ticker">
+        <span class="ticker-label">🟢 FRESH STOCK</span>
+        <span class="ticker-text">🥔 Potato – Rs.90/kg &nbsp;|&nbsp; 🍅 Tomato – Rs.50/kg &nbsp;|&nbsp; 🧅 Onion –
+            Rs.60/kg &nbsp;|&nbsp; 🥕 Carrot – Rs.45/kg &nbsp;|&nbsp; 🥦 Broccoli – Rs.40/kg &nbsp;|&nbsp; 🍄 Mushroom –
+            Rs.100/kg &nbsp;|&nbsp; 🫛 Green Peas – Rs.40/kg &nbsp;|&nbsp; 🌶️ Green Chili – Rs.50/kg</span>
+    </div>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Freshest Veggies<br>Delivered to Your <span>Door</span></h1>
+            <p>Your trusted mini mart in Shankernagar, Rupandehi. Order fresh, organic produce online and get fast
+                delivery right to your home.</p>
+            <div class="hero-btns">
+                <a href="products.html" class="btn-primary"><i class="fas fa-shopping-basket"></i> Shop Now</a>
+                <a href="offers.html" class="btn-secondary"><i class="fas fa-tags"></i> Weekly Deals</a>
+            </div>
+        </div>
+        <div class="hero-emoji">🛒</div>
+    </section>
+
+    <div class="container">
+
+        <!-- Categories -->
+        <div class="section-header" style="margin-top:40px;">
+            <h2>Shop By Category</h2>
+            <p>Find what you need quickly</p>
+        </div>
+        <div class="categories">
+            <a href="products.html" class="cat-card">
+                <div class="cat-icon">🥔</div>
+                <div class="cat-name">Root Veggies</div>
+            </a>
+            <a href="products.html" class="cat-card">
+                <div class="cat-icon">🥬</div>
+                <div class="cat-name">Leafy Greens</div>
+            </a>
+            <a href="products.html" class="cat-card">
+                <div class="cat-icon">🍅</div>
+                <div class="cat-name">Fruits & Gourds</div>
+            </a>
+            <a href="products.html" class="cat-card">
+                <div class="cat-icon">🧄</div>
+                <div class="cat-name">Spices & Herbs</div>
+            </a>
+            <a href="offers.html" class="cat-card">
+                <div class="cat-icon">🏷️</div>
+                <div class="cat-name">Today's Deals</div>
+            </a>
+            <a href="delivery.html" class="cat-card">
+                <div class="cat-icon">🛵</div>
+                <div class="cat-name">Fast Delivery</div>
+            </a>
+        </div>
+
+        <!-- Featured Products (show first 6) -->
+        <div class="section-header" style="margin-top:40px;">
+            <h2>Daily Essentials</h2>
+            <p>Hand-picked fresh stock – updated every morning</p>
+        </div>
+        <div class="grid" id="featured-grid"></div>
+        <div style="text-align:center;margin-top:24px;">
+            <a href="products.html" class="btn-primary" style="display:inline-flex;">View All Products <i
+                    class="fas fa-arrow-right" style="margin-left:8px;"></i></a>
+        </div>
+
+        <!-- Why Us -->
+        <div class="section-header" style="margin-top:50px;">
+            <h2>Why Choose Fresh Mart?</h2>
+        </div>
+        <div class="steps">
+            <div class="step">
+                <div class="step-num"><i class="fas fa-leaf"></i></div>
+                <h3>100% Fresh</h3>
+                <p>Daily fresh stock sourced directly from local farms in Rupandehi.</p>
+            </div>
+            <div class="step">
+                <div class="step-num"><i class="fas fa-truck"></i></div>
+                <h3>Fast Delivery</h3>
+                <p>Same-day delivery within Shankernagar area. Flat Rs. 150 charge.</p>
+            </div>
+            <div class="step">
+                <div class="step-num"><i class="fab fa-whatsapp"></i></div>
+                <h3>Easy Ordering</h3>
+                <p>Add to cart and order directly via WhatsApp. No app needed!</p>
+            </div>
+            <div class="step">
+                <div class="step-num"><i class="fas fa-tags"></i></div>
+                <h3>Best Prices</h3>
+                <p>Weekly deals and special discounts every Monday and Thursday.</p>
+            </div>
+        </div>
+
+        <!-- Find Us / Map Section -->
+        <div class="section-header" style="margin-top:50px;">
+            <h2>📍 Find Us</h2>
+            <p>Visit us or get delivery in Shankernagar, Butwal, Rupandehi</p>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1.6fr;gap:28px;align-items:start;margin-bottom:20px;"
+            class="map-section">
+
+            <!-- Address Info -->
+            <div style="background:white;border-radius:14px;padding:28px;box-shadow:0 4px 20px rgba(0,0,0,0.08);">
+                <h3
+                    style="font-weight:800;font-size:1.1rem;margin-bottom:18px;border-left:4px solid var(--primary);padding-left:12px;">
+                    🥦 Fresh Mart Shankernagar</h3>
+                <div style="display:flex;flex-direction:column;gap:14px;">
+                    <div style="display:flex;align-items:flex-start;gap:12px;">
+                        <div
+                            style="background:#e8f5e9;color:var(--primary);width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div style="font-size:0.75rem;color:#999;text-transform:uppercase;letter-spacing:0.5px;">
+                                Address</div>
+                            <div style="font-weight:700;font-size:0.95rem;margin-top:2px;">Shankernagar,
+                                Butwal<br>Rupandehi, Lumbini Province</div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:12px;">
+                        <div
+                            style="background:#e8f5e9;color:var(--primary);width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <div style="font-size:0.75rem;color:#999;text-transform:uppercase;letter-spacing:0.5px;">
+                                Phone / WhatsApp</div>
+                            <div style="font-weight:700;font-size:0.95rem;margin-top:2px;"><a href="tel:9847076207"
+                                    style="color:var(--primary);text-decoration:none;">9847076207</a></div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:12px;">
+                        <div
+                            style="background:#e8f5e9;color:var(--primary);width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <div style="font-size:0.75rem;color:#999;text-transform:uppercase;letter-spacing:0.5px;">
+                                Open Hours</div>
+                            <div style="font-weight:700;font-size:0.95rem;margin-top:2px;">6:00 AM – 8:00 PM<br><span
+                                    style="font-weight:400;color:#888;font-size:0.85rem;">Daily (including
+                                    weekends)</span></div>
+                        </div>
+                    </div>
+                    <div style="display:flex;align-items:flex-start;gap:12px;">
+                        <div
+                            style="background:#e8f5e9;color:var(--primary);width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1rem;">
+                            <i class="fas fa-motorcycle"></i>
+                        </div>
+                        <div>
+                            <div style="font-size:0.75rem;color:#999;text-transform:uppercase;letter-spacing:0.5px;">
+                                Delivery Zone</div>
+                            <div style="font-weight:700;font-size:0.95rem;margin-top:2px;">Shankernagar &amp; nearby
+                                areas<br><span style="font-weight:400;color:#888;font-size:0.85rem;">Flat Rs. 150
+                                    delivery charge</span></div>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://wa.me/9779847076207" target="_blank"
+                    style="display:flex;align-items:center;justify-content:center;gap:8px;margin-top:20px;background:#25D366;color:white;padding:12px 20px;border-radius:30px;font-weight:800;font-size:0.95rem;text-decoration:none;transition:0.2s;"
+                    onmouseover="this.style.background='#1ebe5c'" onmouseout="this.style.background='#25D366'">
+                    <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+
+            <!-- Embedded Map -->
+            <div style="border-radius:14px;overflow:hidden;box-shadow:0 4px 20px rgba(0,0,0,0.08);height:380px;">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.3!2d83.4498!3d27.6863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996863b7c65c5f5%3A0x5b1b4e7e3e7e3e7e!2sShankarnagar%2C%20Butwal%2032900!5e0!3m2!1sen!2snp!4v1709380000000!5m2!1sen!2snp"
+                    width="100%" height="100%" style="border:0;display:block;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="Fresh Mart location – Shankernagar, Butwal">
+                </iframe>
+            </div>
+        </div>
+        <style>
+            @media (max-width: 768px) {
+                .map-section {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+        </style>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">🥦 FRESH<span style="color:white">MART</span></a>
+                    <p>Your trusted mini mart near you in Shankernagar, Rupandehi. Providing fresh, organic grocery
+                        delivery since 2022.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="products.html">Products</a>
+                    <a href="offers.html">Offers</a>
+                    <a href="delivery.html">Delivery Info</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> 9847076207</p>
+                    <p><i class="fas fa-envelope"></i> freshmar22@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Shankernagar, Rupandehi</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Fresh Mart Shankernagar | Best grocery delivery & mini mart near you in Rupandehi</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const grid = document.getElementById('featured-grid');
+            if (grid) {
+                vegData.slice(0, 6).forEach(item => {
+                    grid.innerHTML += `
+            <div class="card">
+                <div class="img-container">
+                    <img src="${item.img}" alt="${item.name}" class="card-img" loading="lazy">
+                </div>
+                <div class="card-body">
+                    <p class="name-en">${item.name}</p>
+                    <p class="name-np">${item.np}</p>
+                    <div class="price">Rs. ${item.price} <span class="unit">/ kg</span></div>
+                    <button class="add-btn" onclick="addToCart('${item.name}', ${item.price})">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                </div>
+            </div>`;
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>
